@@ -15,6 +15,10 @@ run/main_scene="res://Resources/Cenas/Main.tscn"
 boot_splash/image="res://Resources/Sprites/Conectando.png"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 ui_accept={

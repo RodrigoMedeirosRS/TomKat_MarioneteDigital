@@ -40,6 +40,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0177679, 4.20755, 0.0121927
 bake_extents = Vector3( 25.0582, 10.4833, 21.4139 )
 light_data = SubResource( 1 )
 
+[node name="Viewport" type="Viewport" parent="Modelos3D"]
+size = Vector2( 1024, 600 )
+
 [node name="Luz_de_3_Pontos" type="Spatial" parent="Modelos3D"]
 
 [node name="OmniLight2" type="OmniLight" parent="Modelos3D/Luz_de_3_Pontos"]
