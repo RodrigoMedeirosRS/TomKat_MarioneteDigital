@@ -1,0 +1,8 @@
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\bin\ExportDebug\TomKat_MarioneteDigital.dll
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\bin\ExportDebug\TomKat_MarioneteDigital.pdb
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\obj\ExportDebug\TomKat_MarioneteDigital.csprojAssemblyReference.cache
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\obj\ExportDebug\TomKat_MarioneteDigital.AssemblyInfoInputs.cache
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\obj\ExportDebug\TomKat_MarioneteDigital.AssemblyInfo.cs
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\obj\ExportDebug\TomKat_MarioneteDigital.csproj.CoreCompileInputs.cache
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\obj\ExportDebug\TomKat_MarioneteDigital.dll
+C:\Users\edmundo\Documents\Rodrigo\Projetos\TomKat_MarioneteDigital\.mono\temp\obj\ExportDebug\TomKat_MarioneteDigital.pdb
