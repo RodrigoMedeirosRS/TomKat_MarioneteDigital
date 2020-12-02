@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Resources/Materiais/Fur.material" type="Material" id=1]
 [ext_resource path="res://Resources/Materiais/Orelhas.material" type="Material" id=2]
@@ -14,6 +14,19 @@
 [ext_resource path="res://Resources/Modelos/Animacoes/Pensativo.tres" type="Animation" id=12]
 [ext_resource path="res://Resources/Modelos/Animacoes/Impaciente.tres" type="Animation" id=13]
 [ext_resource path="res://Resources/Modelos/Animacoes/Negando.tres" type="Animation" id=14]
+[ext_resource path="res://Resources/Sprites/Expressoes/Boca1.png" type="Texture" id=15]
+[ext_resource path="res://Resources/Sprites/Expressoes/Boca2.png" type="Texture" id=16]
+[ext_resource path="res://Resources/Sprites/Expressoes/Boca3.png" type="Texture" id=17]
+[ext_resource path="res://Resources/Sprites/Expressoes/Boca4.png" type="Texture" id=18]
+[ext_resource path="res://Resources/Sprites/Expressoes/Olho1.png" type="Texture" id=19]
+[ext_resource path="res://Resources/Sprites/Expressoes/Olho4.png" type="Texture" id=20]
+[ext_resource path="res://Resources/Sprites/Expressoes/Olho3.png" type="Texture" id=21]
+[ext_resource path="res://Resources/Sprites/Expressoes/Olho2.png" type="Texture" id=22]
+[ext_resource path="res://Resources/Sprites/Expressoes/Sombrancelha2.png" type="Texture" id=23]
+[ext_resource path="res://Resources/Sprites/Expressoes/Sombrancelha1.png" type="Texture" id=24]
+[ext_resource path="res://Resources/Sprites/Expressoes/Sombrancelha4.png" type="Texture" id=25]
+[ext_resource path="res://Resources/Sprites/Expressoes/Sombrancelha3.png" type="Texture" id=26]
+[ext_resource path="res://Source/TomKatController.cs" type="Script" id=27]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Kurobei002"
@@ -470,10 +483,171 @@ tracks/40/imported = true
 tracks/40/enabled = true
 tracks/40/keys = PoolRealArray( 0, 1, 0, 0, 0, -8.14603e-08, 0, 0, 1, 0.01, 0.01, 0.01, 5, 1, 0, 0, 0, -8.14603e-08, 0, 0, 1, 0.01, 0.01, 0.01 )
 
+[sub_resource type="Animation" id=5]
+resource_name = "Falando"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 15 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 15 ), ExtResource( 15 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Direito_Fechado"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 20 ), ExtResource( 20 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Esquedo_Fechado"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 21 ), ExtResource( 21 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Fechados"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 22 ), ExtResource( 22 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Olhos_Abertos"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 19 ), ExtResource( 19 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "Curiosidade"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 25 ), ExtResource( 25 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "Erguida"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 23 ), ExtResource( 23 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Normal"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 24 ), ExtResource( 24 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Raiva"
+tracks/0/type = "value"
+tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:next_pass:albedo_texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 26 ), ExtResource( 26 ) ]
+}
+
 [node name="TomKat" type="Spatial"]
+script = ExtResource( 27 )
 
 [node name="Gizo" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.12468, 0.74591 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.12468, 0.589469 )
 
 [node name="root" type="Spatial" parent="."]
 transform = Transform( 0.01, 0, 0, 0, 0.01, 1.62921e-09, 0, -1.62921e-09, 0.01, 0, 0, 0 )
@@ -700,3 +874,22 @@ anims/Idle = SubResource( 3 )
 anims/Impaciente = ExtResource( 13 )
 anims/Negando = ExtResource( 14 )
 anims/Pensativo = ExtResource( 12 )
+
+[node name="AnimationPlayerBoca" type="AnimationPlayer" parent="."]
+autoplay = "Quieto"
+anims/Falando = SubResource( 5 )
+anims/Quieto = SubResource( 4 )
+
+[node name="AnimationPlayerOlhos" type="AnimationPlayer" parent="."]
+autoplay = "Olhos_Abertos"
+anims/Direito_Fechado = SubResource( 7 )
+anims/Esquedo_Fechado = SubResource( 8 )
+anims/Fechados = SubResource( 9 )
+anims/Olhos_Abertos = SubResource( 6 )
+
+[node name="AnimationPlayerSombrancelhas" type="AnimationPlayer" parent="."]
+autoplay = "Normal"
+anims/Curiosidade = SubResource( 12 )
+anims/Erguida = SubResource( 10 )
+anims/Normal = SubResource( 11 )
+anims/Raiva = SubResource( 13 )
