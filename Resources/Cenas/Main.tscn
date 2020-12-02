@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Resources/Cenas/Personagens/TomKat.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Resources/Cenas/Cenario/TomCatRoom.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Resources/Cenas/Cenario/Cadeira.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Resources/Sprites/CameraOFF.png" type="Texture" id=4]
+[ext_resource path="res://Source/CameraController.cs" type="Script" id=5]
 
 [sub_resource type="BakedLightmapData" id=1]
 bounds = AABB( -25.0582, -10.4833, -21.4139, 50.1164, 20.9667, 42.8278 )
@@ -27,6 +29,11 @@ transform = Transform( 1, 0, 0, 0, 0.998521, 0.0543751, 0, -0.0543751, 0.998521,
 current = true
 fov = 60.0
 near = 0.01
+script = ExtResource( 5 )
+
+[node name="CameraOff" type="Sprite" parent="Modelos3D/Camera"]
+texture = ExtResource( 4 )
+centered = false
 
 [node name="GIProbe" type="BakedLightmap" parent="Modelos3D"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0177679, 4.20755, 0.0121927 )

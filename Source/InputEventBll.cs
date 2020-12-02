@@ -3,7 +3,7 @@ using Godot;
 namespace BLL
 {
 	public enum KeyStatus { Pressed, Released, Hold };
-    public enum InputAction { falar, olho_esquerdo, olho_direito, sombrancelha_1, sombrancelha_2, Acenando, ByeBye, Concordando, Confuso, Desesperado, Digitando, Hifi, Impaciente, Negando, Pensativo };
+    public enum InputAction { falar, olho_esquerdo, olho_direito, sombrancelha_1, sombrancelha_2, Acenando, ByeBye, Concordando, Confuso, Desesperado, Digitando, Hifi, Impaciente, Negando, Pensativo, CameraOff };
 	
 	public static class InputEventBll
 	{
