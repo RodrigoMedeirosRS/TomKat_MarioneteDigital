@@ -533,7 +533,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-resource_name = "Esquedo_Fechado"
+resource_name = "Esquerdo_Fechado"
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("root/Skeleton/Kurobei002:mesh:surface_3/material:next_pass:next_pass:albedo_texture")
@@ -869,7 +869,7 @@ anims/Concordando = ExtResource( 7 )
 anims/Confuso = ExtResource( 8 )
 anims/Desesperado = ExtResource( 9 )
 anims/Digitando = ExtResource( 10 )
-anims/Hi-fi = ExtResource( 11 )
+anims/Hifi = ExtResource( 11 )
 anims/Idle = SubResource( 3 )
 anims/Impaciente = ExtResource( 13 )
 anims/Negando = ExtResource( 14 )
@@ -883,7 +883,7 @@ anims/Quieto = SubResource( 4 )
 [node name="AnimationPlayerOlhos" type="AnimationPlayer" parent="."]
 autoplay = "Olhos_Abertos"
 anims/Direito_Fechado = SubResource( 7 )
-anims/Esquedo_Fechado = SubResource( 8 )
+anims/Esquerdo_Fechado = SubResource( 8 )
 anims/Fechados = SubResource( 9 )
 anims/Olhos_Abertos = SubResource( 6 )
 
